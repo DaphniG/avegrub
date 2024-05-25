@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body {
+    background-color: #FFE0CA; /* Set the background color of the website */
+}
+
+.header{
+    min-height: 70vh;
+    width: 100%;
+    height: 10%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/post.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 1% 1%;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #FFE0CA; */
+}
+
+nav img{
+    width: 100px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #f9f6f6; /* Changed text color to black for better contrast */
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color:#fff;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.search-container {
+    margin: 20px 0; /* Add some margin for spacing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px; /* Rounded corners for left side */
+    outline: none; /* Remove default outline */
+    width: 300px;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-left: none; /* Remove left border */
+    border-radius: 0 4px 4px 0; /* Rounded corners for right side */
+    background-color: #f44336; /* Button background color */
+    color: white; /* Button text color */
+    cursor: pointer;
+    outline: none; /* Remove default outline */
+}
+
+.search-btn:hover {
+    background-color: #e33329; /* Darker background on hover */
+}
+
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 16px; /* Reduce the padding to make the button smaller in length */
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top: 20px; /* Add margin to move the button down */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.hero-btn:hover {
+    border: 1px solid #F0B51D;
+    background: #F0B51D;
+    transition: 1s;
+}
+
+.course{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+    
+}
+
+.course h1{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: left;
+    margin-left: -75px; 
+    color: #33363F;
+    
+}
+
+.course h3{
+    color: #FFE0CA;
+}
+
+p{
+    color: #FFE0CA;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+
+
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    
+
+}
+
+.arrow-container img{
+    display: flex;
+    align-items: center;
+    padding-top: 150px;
+    margin-left: -75px; 
+    
+
+
+}
+
+
+.course-col{
+    flex-basis: 31%;
+    background: #C83701;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 5px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    display: flex;
+
+    flex-direction: column;
+    border: 3px solid #F0B51D;
+    justify-content: space-between;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+
+
+}
+
+.cuisine-image {
+    margin: 0 auto;
+    max-width: 100px; /* Adjust the maximum width of the images */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.rightarrow-container img{
+    display: flex;
+    align-items: center;
+    padding-top: 150px;
+    margin-right: -75px; 
+    
+
+
+}
+
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+.campus h1{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: left;
+    margin-left: -75px; 
+    
+}
+
+.campus h1{
+    color: #33363F;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+    margin-left: -75px; 
+    
+}
+
+.gray p{
+    color: #C83701;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: left;
+    margin-left: -90px; 
+}
+
+.campus-col{
+    background-color: #C83701;
+    flex-basis: 80%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #F0B51D;
+}
+
+
+
+.campus-col h3 {
+    font-size: 30px; /* Adjust font-size to make it bigger */
+    color:#FFE0CA;
+}
+
+
+.campus-col img{
+    margin-top: 20px;
+    width: 50%;
+} 
+
+.user-info {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center items vertically */
+    margin-left: 40px; /* Adjust margin-left to shift both to the right */
+}
+
+.user-img {
+    width: 30px !important; /* Set the width of the user images */
+    height: auto !important; /* Maintain the aspect ratio */
+    margin-right: 5px; /* Add some space between the image and text */
+    margin-left: 30px; /* Adjust margin-left if necessary */
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333; /* Set background color */
+    color: #fff; /* Set text color */
+    padding: 10px 0; /* Reduce padding */
+    text-align: center; /* Center align text */
+}
+
+.container {
+    max-width: 800px; /* Reduce maximum width */
+    margin: 0 auto; /* Center align content */
+}
+
+
